@@ -1,0 +1,138 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: rgb(255,209,202);
+}
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    display: flex;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #de5b5b;
+    color: white;
+    padding: 10px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-img{
+    width: 40px;
+    cursor: pointer;
+    margin-right: 170px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+nav ul li{
+    margin-right: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    padding: 6px;
+}
+.menu-img{
+    width: 40px;
+    cursor: pointer;
+}
+.image-container {
+        flex-shrink: 0; 
+}
+.image{
+    width: 50%;
+    height: auto;
+}
+.image img{
+    width: 20%;
+    height: auto;
+}
+.text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.text h2{
+   font-size: 65px;
+   text-transform: capitalize;
+   margin-top: 20px;
+   margin-bottom: 50px;
+   text-align: center;
+}
+.text p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    line-height: 1.5p;
+}
+.text button{
+    padding: 15px;
+    background-color: #de5b5b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    margin-left: -275px;
+}
+.text button:hover{
+    background-color: #de5b5b;
+}
+@media only screen and (max-width:768px){
+.navbar{
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menu-img{
+    margin-right: 0;
+}
+nav ul{
+    text-align: center;
+    margin-top: 20px;
+    float: none;
+}
+nav ul li{
+    display: block;
+    margin: 10px 0;
+}
+.text p{
+    margin-left: 0;
+}
+}
+@media only screen and (max-width: 480px){
+.text h2{
+    font-size: 40px;
+}
+.text button{
+    width: 150px;
+    margin-left: -200px;
+}
+}
